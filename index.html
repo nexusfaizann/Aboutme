@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexus faizan</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(180deg, #3f6699, #4f76a8);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background: #f4f4f4;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav-links .cta {
+    font-weight: 700;
+}
+
+/* ================= MAIN ================= */
+
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+.card {
+    background: #f4f4f4;
+    width: 600px;
+    max-width: 100%;
+    padding: 80px 50px 50px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid #4f76a8;
+    background: white;
+}
+
+/* Text */
+.card h1 {
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #444;
+    font-size: 15px;
+}
+
+.description {
+    margin-top: 30px;
+    line-height: 1.6;
+    color: #555;
+    font-size: 15px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: #4f76a8;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #3e5f8b;
+}
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #dfe3e8;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 22px;
+    background: #2e6da4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        font-size: 13px;
+    }
+
+    .card {
+        padding: 70px 25px 40px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        top: -60px;
+    }
+
+    .card h1 {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main {
+        padding: 60px 15px;
+    }
+
+    .card {
+        padding: 60px 20px 35px;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+        top: -50px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">about.me</div>
+    <ul class="nav-links">
+        <li><a href="#" class="cta">Get your page</a></li>
+        <li><a href="Feature.html">Features</a></li>
+        <li><a href="login.html">Log In</a></li>
+    </ul>
+</nav>
+
+<section class="main">
+    <div class="card">
+        <img src="IMG_7201.JPG" alt="Profile" class="profile-img">
+
+        <h1>NEXUS FAIZAN</h1>
+        <p class="subtitle">Web Developer and Software Engineer </p>
+
+        <a href="https://nexusfaizan.netlify.app/" class="btn">🌐 Visit my website</a>
+
+        <p class="description">
+            Hi, I’m a Junior Software Engineer who loves turning ideas into real-world applications. 
+            I enjoy working with modern web technologies and solving challenging problems. I’m constantly learning, building, and improving to become a better developer every day
+        </p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div>Get a page and a domain with your name.</div>
+    <a href="#" class="footer-btn">Get started for free</a>
+</footer>
+
+</body>
+</html>
